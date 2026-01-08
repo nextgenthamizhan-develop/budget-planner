@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.theme-animate * {
+  transition-property: background-color, color, border-color, box-shadow, fill, stroke, opacity;
+  transition-duration: 240ms;
+  transition-timing-function: ease;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+/* PDF skins */
+.pdf-skin { padding: 16px; border-radius: 16px; }
+.pdf-light { background:#ffffff; color:#0f172a; }
+.pdf-light .pdf-card { background:#fff; border:1px solid #e2e8f0; }
+.pdf-light .pdf-muted { color:#475569; }
+.pdf-light .pdf-badge-income { background:#dcfce7; color:#166534; }
+.pdf-light .pdf-badge-expense { background:#ffe4e6; color:#9f1239; }
+
+.pdf-dark { background:#0b1220; color:#e5e7eb; }
+.pdf-dark .pdf-card { background:#0f172a; border:1px solid #1f2937; }
+.pdf-dark .pdf-muted { color:#a3a3a3; }
+.pdf-dark .pdf-badge-income { background:#052e16; color:#86efac; }
+.pdf-dark .pdf-badge-expense { background:#3f0a0a; color:#fda4af; }
